@@ -1,3 +1,4 @@
+// Loader
 const elLoader = document.querySelector('.js-loader');
 
 document.addEventListener('DOMContentLoaded', () => {

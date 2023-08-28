@@ -5,6 +5,22 @@
 }
 
 /* FONT-FACE  */
+@font-face {
+  font-family: "Gilroy Light";
+  src: url(../fonts/gilroy-light.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy Extra Bold";
+  src: url(../fonts/gilroy-extra-bold.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
+
 
 /* LOADER  */
 .loader-wrapper {
@@ -39,6 +55,7 @@
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -53,6 +70,10 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  user-select: none;
+}
+
 *,
 *::before,
 *::after {
@@ -65,8 +86,8 @@ body {
   height: 100%;
   background-color: var(--white);
   color: var(--black);
-  font-family: "Arial", sans-serif;
-  font-size: 1.6rem;
+  font-family: "Gilroy Light", "Arial", sans-serif;
+  font-size: 3rem;
   line-height: 1.5;
   padding: 0;
   margin: 0;
@@ -80,7 +101,7 @@ img {
 
 /* FOCUS-STYLES  */
 *:focus {
-  outline: 0.3rem dashed var(--black);
+  outline: none;
   outline-offset: 0.3rem;
 }
 
